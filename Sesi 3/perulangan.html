@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Belajar Javascript Perulangan For Pada Javascript</title>
+</head>
+<body>
+    <h1>Perulangan For Pada Javascript</h1>
+
+    <button onclick="perulangan()">TOMBOL</button>
+
+    <div id="hasil"></div>
+
+    <script>
+        function perulangan() {
+            var text = "";
+            var x;
+            for (x = 0; x <= 1000; x++) {
+                text += "Angka " + x + "<br>";
+            }
+            document.getElementById("hasil").innerHTML = text;
+        }
+    </script>
+
+</body>
+</html>

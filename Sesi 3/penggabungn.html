@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cetak Isi Array</title>
+</head>
+<body>
+    <h3>Array dengan sintak new Array</h3>
+    <br>
+    <script>
+        var kota = ['Bandung', 'Ciwaruga', 'Cimahi', 'Garut'];
+        //Menampilkan seluruh isi array
+        document.write("Menampilkan dengan perulangan For <hr>");
+        for(i=0;i<kota.length;i++){
+            document.write(kota[i],"<br>");
+        }
+        var nama = ['Asep', 'Iwan', 'Cepi', 'Agus', 'Dadang'];
+        document.write("<br>Menampilkan dengan for in<hr>");
+        for(i in nama){
+            document.write(i,". ",nama[i]+"<br>");
+        }
+    </script>
+</body>
+</html>

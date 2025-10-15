@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar Javascript Perulangan For Pada Javascript</title>
+</head>
+<body>
+    <h1>Perulangan For Pada Javascript</h1>
+    <button onclick="perulangan()">TOMBOL</button>
+    <div id="hasil"></div>
+    <script>
+        function perulangan() {
+            var s = "";
+            for (var i = 0; i < 5; i++) {
+                for (var j = 0; j <= i; j++) {
+                    s += "* ";
+                }
+                s += "</br>";
+            }
+            document.write(s);
+        }
+    </script>
+</body>
+</html>

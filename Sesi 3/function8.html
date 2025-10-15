@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>    
+        <title>Cetak Isi Array</title>
+    </head>
+    
+    <body>    
+        <h3>Array dengan sintak new Array</h3>
+        <br>
+        <script>   
+var arr1 = [1,2,3,4,"a","b","c","d"];
+document.write(arr1.toString(),"<br>");
+// hasil: 1,2,3,4,a,b,c,d
+// masukkan elemen "x","y","z"
+// mulai dari elemen ke 4
+var arr2 = arr1.splice(4,0,"x","y","z")
+document.write(arr1.toString(),"<br>"); //hasil:1,2,3,4,x,y,z,a,b,c,d
+document.write(arr2.toString(),"<br>");
+// hasil: [] (array kosong)
+var arr1 = [1,2,3,4,"a","b","c","d"];
+document.write(arr1.toString(),"<br>");
+// hasil: 1,2,3,4,a,b,c,d
+// hapus 4 elemen mulai dari elemen ke 4
+// masukkan elemen "x","y","z" pada posisi penghapusan
+var arr2 = arr1.splice(4,4,"x","y","z")
+document.write(arr1.toString(),"<br>");
+// hasil: 1,2,3,4,x,y,z
+document.write(arr2.toString(),"<br>");
+// hasil: a,b,c,d
+        </script>
+    </body>
+</html>
